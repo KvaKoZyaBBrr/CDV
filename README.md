@@ -52,7 +52,6 @@ VALUES
 > 
 > docker run --name pgs -e POSTGRES_PASSWORD=123 -u postgres -d -p 5432:5432 postgres
 > 
-> создана БД cdv и схема cdvScheme
 > выполнены скрипты из dbScripts.sql
 > 
 

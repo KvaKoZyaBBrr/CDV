@@ -30,6 +30,14 @@ void fillMenu(){
 	Console.WriteLine(projectStrings["exit"]);
 }
 
+void contextCheck(){
+	using (cdvContext db = new cdvContext()){
+		Console.WriteLine(db.department.Count());
+		Console.ReadLine();
+
+	}
+
+}
 
 fillDictionary();
 while(true){
@@ -40,6 +48,7 @@ while(true){
 	switch(command){
 		case(0):{return;}
 		case(1):{
+			contextCheck();
 			Console.WriteLine();
 			break;
 			}
